@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('font/BEBAS___-webfont.eot');
+    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BEBAS___-webfont.woff') format('woff'),
+         url('font/BEBAS___-webfont.ttf') format('truetype'),
+         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body{
+ font-family: 'BebasRegular';
+	width:100%;
+	height:100%;
+}
+
+.navigation{
+	position:fixed;
+	z-index:1;
+	top:20px;
+}
+.navigation li{
+	color:#CCC;
+	display:block;
+	padding: 0 10px;
+	line-height:30px;
+	margin-bottom:2px;
+	font-weight:bold;
+	-webkit-transition: all .2s ease-in-out;
+	border-bottom:1px solid black;
+	text-align:left;
+	width:53px;
+	text-decoration:none;
+}
+.navigation li:hover,.active{
+	font-size:25px;
+	cursor:pointer;
+	width:100px!important;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.wrapper{
+	width:960px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+}
+.slide2 {
+	background-attachment: fixed;
+	width: 100%;
+	height: 2000px;
+	position:relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.slideno{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.button{
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:0px;
+	left:85%;
+	background-color:#333333;
+	background-image:url(../images/arrow.png);
+}
+.button:hover{
+	background-color:#494949;
+	cursor:pointer;
+}
+
+.buttonup {
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:0px;
+	left:85%;
+	background-color:#333333;
+	background-image:url(../images/arrow_up.png);
+}
+.buttonup:hover{
+	background-color:#494949;
+	cursor:pointer;
+}	
+
+#intro {
+	background-image:url(../images/sky.jpg);
+	background-position:top left;
+	background-repeat: no-repeat;
+	z-index: -2;
+}
+
+.headline{
+	position:absolute;
+	top:5%;
+	left:24%;
+	righ:25%;
+	width:100%;
+	z-index:1;
+	font-size:110px;
+	color:#CCC;
+}
+
+#intro iframe:first-child{
+	position:absolute;
+	top: 150%;
+	left:15%;
+	
+}
+
+#intro img:first-child {
+	position:absolute;
+	top: 75%;
+	right:100%;
+	z-index: -1;
+	width: 50%;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+}
+
+#intro img:nth-child(2){
+	position:absolute;
+	top: 175%;
+	left: 40%;
+	z-index: -1;
+	width: 50%;
+}
+
+#intro .navhelp{
+	position:absolute;
+	top: 80%;
+	left: 85%;
+	font-family: 'Just Another Hand', cursive;
+	font-size:40px;
+	transform:rotate(10deg);
+	-ms-transform:rotate(10deg); /* IE 9 */
+	-webkit-transform:rotate(10deg); /* Safari and Chrome */
+	color:#FFF
+}
+
+#intro .arrow {
+	position:absolute;
+	top: 85%;
+	left: 85%;
+	transform:rotate(345deg);
+	-ms-transform:rotate(345deg); /* IE 9 */
+	-webkit-transform:rotate(345deg); /* Safari and Chrome */
+}
+
+#events {
+	background-color:#FF4111;
+}
+
+#events .navhelp {
+	position:absolute;
+	top: 38%;
+	left: 1%;
+	font-family: 'Just Another Hand', cursive;
+	font-size:40px;
+	transform:rotate(350deg);
+	-ms-transform:rotate(350deg); /* IE 9 */
+	-webkit-transform:rotate(350deg); /* Safari and Chrome */
+	color:#FFF
+}
+
+#events .arrow {
+	position:absolute;
+	top: 25%;
+	left: 3%;
+	transform:rotate(140deg);
+	-ms-transform:rotate(140deg); /* IE 9 */
+	-webkit-transform:rotate(140deg); /* Safari and Chrome */
+}
+
+#eventsapp{
+	position:absolute;
+	top: 130%;
+	left: 5%;
+	right: 3%;
+	text-align:center;
+	font-family: "Arial Narrow";
+	font-size:110%;
+}
+#eventsapp a {
+	color:#CCC;
+	text-decoration: none;
+	
+}
+#eventsapp a:hover {
+	font-weight:bold;
+}
+#eventsapp a:visited{
+	color:#FFF;
+}
+
+#about {
+	background-image:url(../images/chalkboard2.jpg);
+	background-repeat: no-repeat;
+	height:3000px;
+}
+
+#partners {
+}
+
+
+/* iframe movie embed 
+.movie {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.movie iframe,
+.movie object,
+.movie embed {	
+    top: 0;
+    width: 50%;
+    height: 50%;
+}
+*/
